@@ -5,19 +5,19 @@ set -e # exit on error
 cd "$(dirname "$0")"
 cd ..
 
-rm -rf switch-to-classicpress.zip switch-to-classicpress/
-mkdir switch-to-classicpress/
+rm -rf woocommerce.zip woocommerce/
+mkdir woocommerce/
 
 cp -var \
 	LICENSE \
 	languages/ \
 	lib/ \
 	README.md \
-	switch-to-classicpress.php \
-	switch-to-classicpress/
+	woocommerce.php \
+	woocommerce/
 
-zip -r switch-to-classicpress.zip switch-to-classicpress/
+zip -r woocommerce.zip woocommerce/
 
-rm -rf switch-to-classicpress/
+rm -rf woocommerce/
 
-echo "Plugin built successfully: switch-to-classicpress.zip"
+echo "Plugin built successfully: woocommerce.zip"
